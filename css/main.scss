@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #5D6468;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #49565D;
+    z-index: 200;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 500ms ease-in-out;
+}
+
+
+.navigation.active {
+    clip-path: circle(75%);
+}
+.navigation .dropMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navigation .dropMenu span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 3px;
+    background: whitesmoke ;
+    transition: all .5s ease-in-out;
+    
+}
+.navigation .dropMenu span:nth-child(1) {
+    top: 34%;
+}
+.navigation .dropMenu span:nth-child(2) {
+    top: 50%;
+}
+.navigation .dropMenu span:nth-child(3) {
+    top: 65%;
+}
+
+.navigation.active .dropMenu span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.navigation.active .dropMenu span:nth-child(2) {
+    opacity: 0;
+}
+.navigation.active .dropMenu span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navigation .dropMenu span:hover{
+    width: 35%;
+    transition: all .1s ease-in-out;
+}
+
+.navigation .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.navigation .links a {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Poppins", sans-serif;
+}
+.navigation .links a:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background: #fff;
+    transition: all .3s ease-in-out;
+}
+
+
+.navigation .links a:hover:after {
+    width: 100%;
+}
+
+
+.content{
+    color: whitesmoke;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+
+
+// @media screen and (max-width: 375px){
+//     .content{
+//         margin-top: 20px;
+//         padding-top: 40px;
+//     }
+
+//     .name{
+//         font-weight: 600;
+//     }
+//     .navigation .links a{
+//         font-size: 20px;
+//     }
+
+// }
+
+
+// @media screen and (max-width: 300px){
+//     .content{
+//         margin-top: 20px;
+//         padding-top: 40px;
+//     }
+
+//     .name{
+//         font-weight: 600;
+//     }
+//     .navigation .links a{
+//         font-size: 20px;
+//     }
+
+// }
+
