@@ -6,10 +6,12 @@
 
 body {
     margin: 0px;
+    padding: 0;
     font-family: "Poppins", sans-serif;
     //background: #49565D;
-    background-image: url(../images/Wallpaper.jpg);
+    background-image: url(../images/maskwall.jpg);
     background-size: cover;
+
 }
 
 .content {
@@ -89,6 +91,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 999999;
 }
 .navigation .links a {
     position: relative;
@@ -101,6 +104,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: "Poppins", sans-serif;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 }
 .navigation .links a:after {
     content: "";
@@ -205,7 +209,7 @@ body {
     padding-top: 7em;
     padding-bottom: 8em;
     display: flex;
-    width: 80%;
+    width: 65%;
     height: 100%;
     margin-top: 10em;
     margin-left: 26em;
