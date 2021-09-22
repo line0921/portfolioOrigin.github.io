@@ -8,15 +8,12 @@ body {
   margin: 0px;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-image: url(../images/maskwall.jpg);
-  background-size: cover;
-}
-
-.content {
-  padding: 40px;
-  margin-top: 20px;
-  font-size: 18px;
-  letter-spacing: 2px;
+  background-image: url(../images/prof2BW.jpg);
+  background-size: 100%;
+  background-color: #898989;
+  background-repeat: no-repeat;
+  background-blend-mode:soft-light;
+  background-position-y: 8em;
 }
 
 .navigation {
@@ -26,9 +23,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: 200;
-  background-image: url(../images/prof2.jpg);
+  background-image: url(../images/canvas.jpg);
   background-position: center;
-  background-size: 50%;
+  background-size: 220%;
   background-repeat: no-repeat;
   -webkit-clip-path: circle(25px at calc(100% - 45px) 45px);
           clip-path: circle(25px at calc(100% - 45px) 45px);
@@ -133,7 +130,7 @@ body {
   color: whitesmoke;
   font-family: "Poppins", sans-serif;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -143,23 +140,23 @@ body {
   margin: 0;
   color: #fff;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .content h1 {
   display: inline-block;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   padding: 0;
   margin: 0;
   color: whitesmoke;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-  font-size: 60px;
-  color: #F5BD44;
+  font-size: 24px;
+  
 }
 
 .content span:before {
   content: "";
-  color: black;
+  color: #F5BD44;
   -webkit-animation: animate infinite 10s;
           animation: animate infinite 10s;
 }
@@ -179,20 +176,6 @@ body {
   }
 }
 
-@keyframes animate {
-  0% {
-    content: "Programmer";
-  }
-  45% {
-    content: "Problem Solver";
-  }
-  85% {
-    content: "Designer";
-  }
-  100% {
-    content: "Perfectionist";
-  }
-}
 .skills {
   padding-top: 7em;
   padding-bottom: 8em;
@@ -230,32 +213,3 @@ body {
   line-height: 1.8;
   font-size: 19px;
 }
-
-@media screen and (max-width: 375px) {
-  .content {
-    margin-top: 20px;
-    padding-top: 40px;
-  }
-
-  .name {
-    font-weight: 600;
-  }
-
-  .navigation .links a {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .content {
-    margin-top: 20px;
-    padding-top: 40px;
-  }
-
-  .name {
-    font-weight: 600;
-  }
-
-  .navigation .links a {
-    font-size: 16px;
-  }
-}/*# sourceMappingURL=main.css.map */

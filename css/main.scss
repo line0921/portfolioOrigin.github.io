@@ -8,10 +8,6 @@ body {
     margin: 0px;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    //background: #49565D;
-    background-image: url(../images/maskwall.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .content {
@@ -172,22 +168,4 @@ body {
     100%{
         content: "Perfectionist";
     }
-}
-
-@media only screen and (max-width: 400px){
-
-    .skills-container ul{
-        display: flex;
-    }
-    .skills-container ul li{
-        background: white;
-        padding: 2em;
-        border-radius: 1em;
-        margin-bottom: 1em;
-    }
-
-    .skill-title{
-        font-weight: bold;
-    }
-
 }
