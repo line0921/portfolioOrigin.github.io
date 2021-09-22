@@ -11,7 +11,7 @@ body {
     //background: #49565D;
     background-image: url(../images/maskwall.jpg);
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -174,76 +174,20 @@ body {
     }
 }
 
-.skills{
-    padding-top: 7em;
-    padding-bottom: 8em;
-    display: flex;
-    width: 65%;
-    height: 100%;
-    margin-top: 10em;
-    margin-left: 26em;
-    opacity: 0.89;
-}
+@media only screen and (max-width: 400px){
 
-.skills-container ul{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 5em;
-    list-style-type: none;
-    ;
-}
-
-.skills-container ul li{
-    background: #FFF9EB;
-    padding: 4em;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    letter-spacing: 2px;
+    .skills-container ul{
+        display: flex;
+    }
+    .skills-container ul li{
+        background: white;
+        padding: 2em;
+        border-radius: 1em;
+        margin-bottom: 1em;
+    }
 
     .skill-title{
-        letter-spacing: 4px;
-        color: #EBAA1F;
         font-weight: bold;
-        font-size: 25px;
-        line-height: 2.0;
-    }
-
-    .skill-desc{
-        line-height: 1.8;
-        font-size: 19px;
     }
 
 }
-
-@media screen and (max-width: 375px){
-    .content{
-        margin-top: 20px;
-        padding-top: 40px;
-    }
-
-    .name{
-        font-weight: 600;
-    }
-    .navigation .links a{
-        font-size: 17px;
-    }
-
-}
-
-
-@media screen and (max-width: 300px){
-    .content{
-        margin-top: 20px;
-        padding-top: 40px;
-    }
-
-    .name{
-        font-weight: 600;
-    }
-    .navigation .links a{
-        font-size: 16px;
-    }
-
-}
-
