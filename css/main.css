@@ -12,8 +12,7 @@ body {
   background-size: 100%;
   background-color: #898989;
   background-repeat: no-repeat;
-  background-blend-mode:soft-light;
-  background-position-y: 8em;
+  background-position-y: 66px;
 }
 
 .navigation {
@@ -27,6 +26,7 @@ body {
   background-position: center;
   background-size: 220%;
   background-repeat: no-repeat;
+  background-position-y:8em ;
   -webkit-clip-path: circle(25px at calc(100% - 45px) 45px);
           clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 500ms ease-in-out;
@@ -130,8 +130,8 @@ body {
   color: whitesmoke;
   font-family: "Poppins", sans-serif;
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 75%;
+  left: 46%;
   transform: translate(-50%, -50%);
 }
 
@@ -161,14 +161,12 @@ body {
           animation: animate infinite 10s;
 }
 
-@-webkit-keyframes animate {
+@keyframes animate {
   0% {
     content: "Programmer";
   }
-  45% {
-    content: "Problem Solver";
-  }
-  85% {
+  
+  50% {
     content: "Designer";
   }
   100% {
@@ -220,6 +218,7 @@ body {
       background-size: 65%;
       background-position: left;
       background-position-y: -32em;
+      background-blend-mode: soft-light;
   }
 
   .content {
