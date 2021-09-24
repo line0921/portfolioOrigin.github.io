@@ -1,39 +1,186 @@
-<!DOCTYPE html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-      <title>WebPage</title>
-      <link rel="stylesheet" href="css/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>WebPage</title>
   </head>
   <body>
-    <div class="navigation">
-        <div class="dropMenu" onclick="showNav()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <!-- <div class="navigation">
+      <div class="dropMenu" onclick="showNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links">
+        <div class="link">
+          <a href="index.html">Home</a>
         </div>
-        <div class="links">
-          <div class="link">
-            <a href="index.html">Home</a>
-          </div>
-          <div class="link">
-            <a href="mySkills.html">My Skills</a>
-          </div>
-          <div class="link">
-            <a href="contact.html">Contact Me</a>
-          </div>
-          <div class="link">
-            <a href="#"></a>
-          </div>
+        <div class="link">
+          <a href="mySkills.html">My Skills</a>
         </div>
+        <div class="link">
+          <a href="contact.html">Contact Me</a>
+        </div>
+        <div class="link">
+          <a href="#"></a>
+        </div>
+      </div>
+  </div> -->
+
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="namelink text-decoration-none" href="#home">HH</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact-info">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="content">
-        <h1>Haiqal<h1 class="lastName">Hasyim</h1></h1>
-        <h2>I am a <span></span></h2>
+  </nav>
+
+<!--Image introduction-->
+<section id="home">
+  <div class="hero-container">
+    <div class="tagline-container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="introText">Hello! My name is</h2>
+      <h1 class="introText">Haiqal</h1>
+      <h1 class="introText">Hasyim</h1>
+      <a href="#Contact-info">Contact</a>
+      <a href="https://drive.google.com/file/d/1tBlXpuwa2O7TH1PaMUmKVkBwPqYVT2zX/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Resume</a>
     </div>
-    <script src="app.js"></script>
+  </div>
+</section>
+
+
+
+<!--About Me-->
+<section id="about">
+  <div class="about-container bg-light aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+    <img class="about-prof" src="/images/cropProf.jpg" alt="profile Picture">
+    <h1>I'm a Frontend Web Developer!</h1>
+    <div class="about-desc">
+      <p class="desc-info">I specialize in Frontend Web Development utilizing Angular/BootStrap, but I am excited to branch out into other languages and frameworks.</p>
+      <p class="desc-info">Currently looking for full-time opportunities in any locations. Willing to relocate &#x1F697;</p>
+    </div>
+    <div class="container">
+      <div class="skill-container box-shadow">
+        <div class="skill-title">
+          <h4>Frontend</h4>
+        </div>
+        <ul class="skills-list">
+          <li><img class="skill-icon" src="/images/javascript.png" alt="JavaScript"></li>
+          <li><img class="skill-icon" src="/images/html.png" alt="HTML"></li>
+          <li><img class="skill-icon" src="/images/sass.png" alt="SASS"></li>
+          <li><img class="skill-icon" src="/images/bootstrap.png" alt="bootstrap"></li>
+          <li><img class="skill-icon" src="/images/angular.png" alt="angular"></li>
+        </ul>
+      </div>
+      <div class="skill-container box-shadow">
+        <div class="skill-title">
+          <h4>Cloud</h4>
+        </div>
+        <ul class="skills-list">
+          <li><img class="skill-icon" src="/images/amazon-aws.png" alt="AWS"></li>
+          <li><img class="skill-icon" src="/images/firebase.png" alt="firebase"></li>
+        </ul>
+      </div>
+      <div class="skill-container box-shadow">
+        <div class="skill-title">
+          <h4>General</h4>
+        </div>
+        <ul class="skills-list">
+          <li><img class="skill-icon" src="images/java.png" alt="java"></li>
+          <li><img class="skill-icon" src="images/c.png" alt="c++"></li>
+          <li><img class="skill-icon" src="images/python.png" alt="python"></li>
+          <li><img class="skill-icon" src="images/flutter.png" alt="flutter"></li>
+          <li><img class="skill-icon" src="images/kotlin.png" alt="kotlin"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Projects-->
+<!-- <section id="projects">
+  <h1 class="projects-title">My Recent Projects</h1>
+  <div class="project-container aoi-init aos-animate" data-aos="fade-up">
+
+  </div>
+</section> -->
+
+<!--Contact Me-->
+<section id="Contact-info">
+  <h1 class="contact-title aos-init aos-animate" data-aos="fade-up">Contact Me</h1>
+  <div class="contactCard-container aos-init aos-animate" data-aos="fade-up">
+    <div class="card contact-card box-shadow" data-test="card">
+      <div class="card-body" data-test="card-body">
+        <i class="fas fa-at contact-icon"></i>
+        <p><a href="mailto:haiqal.hayim@gmail.com">haiqal.hayim@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="card contact-card box-shadow" data-test="card">
+      <div class="card-body" data-test="card-body">
+        <i class="fab fa-github contact-icon"></i>
+        <p><a href="https://github.com/line0921">line0921</a></p>
+      </div>
+    </div>
+    <div class="card contact-card social-card box-shadow" data-test="card">
+      <div class="card-body" data-test="card-body">
+        <i class="fas fa-thumbs-up contact-icon"></i>
+        <div class="social-icon-container">
+          <a href="https://www.facebook.com/HaiqalHasyim/"><i class="fab fa-facebook social-icon"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-haiqal-mohd-hasyim-481572178/"><i class="fab fa-linkedin social-icon"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display"></h1>
+    </div>
+  </div>
+</div>
+
+  <script src="app.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
   </body>
 </html>
+
