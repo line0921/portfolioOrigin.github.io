@@ -10,7 +10,6 @@
 ## Tech Used
 - VS code
 - Firefox Inspector tool
-- BootStrap Documentation
 - Adobe XD (Web Design | Contrast Checker)
 
 
