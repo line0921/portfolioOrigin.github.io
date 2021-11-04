@@ -11,9 +11,10 @@
 - VS code
 - Firefox Inspector tool
 - BootStrap Documentation
+- Adobe XD (Web Design | Contrast Checker)
 
 
 ## Improvements
-- A markup from the first version of my Portfolio
-- Utilized BootStrap framework to make the website streamline and more responsive towards mobile as well as tablet
+- Utilized **BootStrap framework** to make the website **streamline and more responsive** towards mobile as well as tablet
 - Utilized Media Queries to adjust to Tablet mode as well as Mobile Mode
+- Followed **ADA & WCAG Accessibility Guidelines** up to **Level 2** to ensure ease of view
