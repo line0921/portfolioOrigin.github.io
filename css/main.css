@@ -227,7 +227,6 @@ ul{
   margin: .8rem;
   border-radius: 1rem;
   transition: .25s;
-  cursor: pointer;
 }
 
 .projects__grid-item{
