@@ -16,6 +16,38 @@ html, body{
   padding-right: .4rem;
 }
 
+
+.material-icons{
+  right: 33px;
+  bottom: 35px;
+  position: fixed;
+  z-index: 10000000;
+}
+
+.scrollTop{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 55%;
+  background: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10000000;
+  transition: .5s;
+}
+
+.scrollTop.active{
+  visibility: visible;
+  opacity: 1;
+  z-index: 10000000;
+}
+
 .navbar-nav li{
   padding: 20px;
 }
@@ -69,6 +101,7 @@ html, body{
   border: 1px solid #ffffff;
   color: #ffffff;
 }
+
 .introText:nth-child(1){
   color: #f0f8ff;
   font-size: 16px;
@@ -118,7 +151,6 @@ html, body{
   text-align: center;
   line-height: 1.2;
   font-size: 20px;
-  position: relative;
   margin-top: 10px;
   margin-bottom: 1rem;
   font-weight: 300;
@@ -131,19 +163,10 @@ html, body{
   letter-spacing: 1px;
 }
 
-.container{
-  /* position: relative;
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom:5rem;
-  padding: 1em;
-  margin-top: -35px;
-  left: 20rem; */
+.container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 5rem;
-
 }
 
 .skill-container{
@@ -390,7 +413,7 @@ ul{
   }
 }
 
-.modal{
+/* .modal{
   position: fixed;
   z-index: 500;
   background: #fff;
@@ -426,9 +449,21 @@ ul{
   align-items: center;
   object-fit: cover;
   transition: .25s;
-}
+} */
 
 @media (max-width: 768px){
+
+  .tagline-container{
+    margin-top: 96px;
+  }
+
+  .projects-title{
+    font-size: 36px;
+  }
+  .contact-title{
+    font-size: 36px;
+  }
+
   .about-desc p{
     font-size: 15px;
     width: 90%;
@@ -436,6 +471,11 @@ ul{
   }
   .about-skill-container{
     margin-left: -20px;
+  }
+
+  .projects__grid-item{
+    width: 20rem;
+    height: 14rem;
   }
 
   .contactCard-container{
@@ -448,8 +488,22 @@ ul{
 }
 
 @media (max-width:576px){
+
+  .tagline-container{
+    margin-top: 100px;
+  }
+
   .contact-title{
     padding-top: 24px;
+  }
+
+  .projects-title{
+    font-size: 24px;
+  }
+
+  .projects__grid-item{
+    width: 18rem;
+    height: 12rem;
   }
 
   .skill-container{
